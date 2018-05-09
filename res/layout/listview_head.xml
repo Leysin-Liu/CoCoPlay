@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.leysin.cocoplay.view.MyGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:layout_marginBottom="10dp"
+        ></com.leysin.cocoplay.view.MyGridView>
+  
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/gridView"
+        android:background="@color/grey200" />
+
+</RelativeLayout>

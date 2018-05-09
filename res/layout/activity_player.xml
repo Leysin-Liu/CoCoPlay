@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.leysin.cocoplay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_download_list_item_more" />
+
+        <TextView
+            android:id="@+id/play_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="真的爱你"
+            android:textColor="@android:color/white" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/maintabbar_button_more_normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+        
+     <android.support.v4.view.ViewPager
+         android:id="@+id/viewPager"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         >
+     </android.support.v4.view.ViewPager>  
+     <com.leysin.cocoplay.view.CircleImageView
+         app:border_color="@android:color/white"
+         app:border_width="2dp"
+         android:id="@+id/imgeView"
+         android:src="@drawable/leysinlau"
+         android:layout_margin="50dp"
+         android:layout_centerInParent="true"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/player_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:progressDrawable="@drawable/seekbar_define_style"
+            android:thumb="@drawable/player_seekbar_playback_thumb" />
+
+        <TextView
+            android:id="@+id/player_total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal" >
+		
+        <RelativeLayout 
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            >
+        <ImageView
+            android:id="@+id/play_modle"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:background="@drawable/playmode_repeate_all" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/pre_activity_bt"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/player_btn_pre_normal" />
+
+            <ImageView
+                android:id="@+id/play_activity_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/landscape_player_btn_play_normal" />
+
+            <ImageView
+                android:id="@+id/next_activity_bt"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/player_btn_next_normal" />
+        </LinearLayout>
+	 <RelativeLayout 
+	     android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            >
+        <ImageView
+            android:id="@+id/music_list"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/player_btn_playlist_normal" />
+	 </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+    </LinearLayout>
+
+</LinearLayout>

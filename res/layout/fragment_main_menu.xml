@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--     android:clipToPadding="false"
+    android:fitsSystemWindows="true" -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#24b7a4"
+        android:padding="8dp" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edittext_shape"
+            android:gravity="center"
+            android:layerType="software"
+            android:text="搜索"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20" >
+        
+        <com.leysin.cocoplay.view.MyListView
+            android:scrollbars="none"
+            android:id="@+id/listView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" 
+            android:dividerHeight="0.2dp"
+            android:divider="@android:color/darker_gray"
+            ></com.leysin.cocoplay.view.MyListView>
+    </RelativeLayout>
+
+</LinearLayout>
