@@ -53,6 +53,7 @@ public class ListFragment extends BaseFragment{
 	public void setOnClickListItemListener(ClickListItemListener listener){
 		this.listener = listener;
 	}
+	
 	interface ClickListItemListener{
 		
 		void onClickListItem(int position);

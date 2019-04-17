@@ -17,7 +17,7 @@ public class MusicUtils {
 	private MusicUtils() {
 	}
 
-	//改良型懒汉 单例模式
+	//double check lock
 	public static MusicUtils getInstance(Context context){
 		MusicUtils.context = context;
 		if(instance == null){

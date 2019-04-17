@@ -18,10 +18,12 @@ public abstract class BaseActivity extends FragmentActivity implements Init{
 		initSystemBar();
 		init();
 	}
+	
 	@Override
 	protected void onStart() {
 		super.onStart();
 	}
+	
 	private void initSystemBar() {
 		// 4.4及以上版本开启
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {

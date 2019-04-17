@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 
-import com.leysin.api.LogUtils;
+import com.leysin.api.ULog;
 import com.leysin.api.UToast;
 import com.leysin.cocoplay.R;
 import com.leysin.cocoplay.Interface.BaseFragment;
@@ -35,7 +35,6 @@ public class MainMenuFragment extends BaseFragment{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-
 		mainView = View.inflate(getActivity(), R.layout.fragment_main_menu, null);
 		initData();
 		initView();
@@ -143,19 +142,19 @@ public class MainMenuFragment extends BaseFragment{
 					}	
 					break;
 				case 1:
-					LogUtils.toast(getActivity(), "功能尚未开发完成，敬请期待能");
+					ULog.toast(getActivity(), "功能尚未开发完成，敬请期待能");
 					break;
 				case 2:
-					LogUtils.toast(getActivity(), "功能尚未开发完成，敬请期待能");
+					ULog.toast(getActivity(), "功能尚未开发完成，敬请期待能");
 					break;
 				case 3:
-					LogUtils.toast(getActivity(), "功能尚未开发完成，敬请期待能");
+					ULog.toast(getActivity(), "功能尚未开发完成，敬请期待能");
 					break;
 				case 4:
-					LogUtils.toast(getActivity(), "功能尚未开发完成，敬请期待能");
+					ULog.toast(getActivity(), "功能尚未开发完成，敬请期待能");
 					break;
 				case 5:
-					LogUtils.toast(getActivity(), "功能尚未开发完成，敬请期待能");
+					ULog.toast(getActivity(), "功能尚未开发完成，敬请期待能");
 					break;
 				}
 			}

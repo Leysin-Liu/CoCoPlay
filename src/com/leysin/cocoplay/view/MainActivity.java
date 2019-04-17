@@ -100,7 +100,7 @@ public class MainActivity extends BaseActivity{
 		mMainMenuFragment.setMenuFragmentItemClickListener(mMenuFragmentItemClickListener);
 		getSupportFragmentManager().beginTransaction().
 		add(R.id.fragment_container,mMainMenuFragment).show(mMainMenuFragment).commit();
-		readState();
+		//readState();
 
 	}
 

@@ -1,7 +1,5 @@
 package com.leysin.cocoplay.view;
 
-import com.leysin.cocoplay.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -18,11 +16,12 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.Handler;
 import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+
+import com.leysin.cocoplay.R;
 
 public class CircleImageView extends ImageView {
 
